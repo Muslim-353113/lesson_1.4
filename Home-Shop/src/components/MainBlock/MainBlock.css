@@ -1,0 +1,130 @@
+.main {
+    flex: 1;
+    padding: 40px 32px; 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.hero { 
+    text-align: center; 
+    padding: 40px 0 60px; 
+}
+.hero h1 { 
+    font-size: clamp(28px, 5vw, 52px); 
+    line-height: 1.15; 
+    margin-bottom: 16px; 
+}
+.hero h1 span {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p { 
+    color: var(--text-muted); 
+    font-size: 17px; 
+}
+.hero b { 
+    color: var(--accent-2); 
+}
+.hero__notice {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgba(0, 212, 255, .12);
+  color: var(--accent-2);
+}
+
+.tours h2, .about h2 { 
+    font-size: 28px; 
+    margin-bottom: 24px; 
+}
+
+.tours__filters { 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin-bottom: 28px; 
+}
+.tours__filters button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: .2s;
+  font-size: 14px;
+}
+.tours__filters button:hover { 
+    border-color: var(--accent-2); 
+    color: var(--accent-2); 
+}
+.tours__filters button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.tours__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.tour-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .2s, border-color .2s;
+}
+.tour-card:hover { 
+    transform: translateY(-4px); 
+    border-color: var(--accent); }
+.tour-card__icon { 
+    font-size: 40px; 
+}
+.tour-card h3 { 
+    font-size: 22px; 
+}
+.tour-card p { 
+    color: var(--text-muted); 
+    font-size: 14px; 
+}
+.tour-card__price { 
+    color: var(--accent-2) !important;
+    font-weight: 700;
+    font-size: 18px !important; 
+    margin-top: auto; 
+}
+.tour-card button {
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+.tour-card button:hover { 
+    opacity: .85; 
+}
+
+.about { 
+    margin-top: 60px; 
+    padding: 32px; 
+    background: var(--bg-card); 
+    border: 1px solid var(--border); 
+    border-radius: 16px; 
+}
+.about p { 
+    color: var(--text-muted); 
+    line-height: 1.7; 
+}

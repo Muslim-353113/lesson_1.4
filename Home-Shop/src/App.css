@@ -1,0 +1,25 @@
+.app {
+  --bg: #0a0e27;
+  --bg-card: #141a3d;
+  --text: #eaeaff;
+  --text-muted: #9aa0c3;
+  --accent: #7c4dff;
+  --accent-2: #00d4ff;
+  --border: #2a3160;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  transition: background .3s, color .3s;
+}
+
+.app--light {
+  --bg: #f4f5fb;
+  --bg-card: #ffffff;
+  --text: #12142b;
+  --text-muted: #5a5f7d;
+  --accent: #5b21b6;
+  --accent-2: #0891b2;
+  --border: #dde0ee;
+}
